@@ -1,0 +1,19 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="col d-flex justify-content-center">
+    <div class="card" style="width: 36rem;">
+        <img class="card-img-top" src="https://images.chesscomfiles.com/uploads/v1/article/25252.5231bdbd.5000x5000o.784d68765c70.jpeg" alt="Card image cap">
+        <div class="card-body">
+            <h3 class="card-title">Welcome to Checkers</h3>
+            <p class="card-text">You can create a new game or choose from list already created one.</p>
+        </div>
+        <div class="card-body">
+            <a asp-page="/CheckersGames/Create" class="btn btn-primary">New Game</a>
+            <a asp-page="/CheckersGames/Index" class="btn btn-primary">List Games</a>
+        </div>
+    </div>
+</div>

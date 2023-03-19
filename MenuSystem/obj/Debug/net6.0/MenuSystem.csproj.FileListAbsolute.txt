@@ -1,0 +1,12 @@
+C:\Users\danyi\RiderProjects\KProgemine\icd0008-2022f\Checkers\MenuSystem\bin\Debug\net6.0\MenuSystem.deps.json
+C:\Users\danyi\RiderProjects\KProgemine\icd0008-2022f\Checkers\MenuSystem\bin\Debug\net6.0\MenuSystem.dll
+C:\Users\danyi\RiderProjects\KProgemine\icd0008-2022f\Checkers\MenuSystem\bin\Debug\net6.0\MenuSystem.pdb
+C:\Users\danyi\RiderProjects\KProgemine\icd0008-2022f\Checkers\MenuSystem\obj\Debug\net6.0\MenuSystem.csproj.AssemblyReference.cache
+C:\Users\danyi\RiderProjects\KProgemine\icd0008-2022f\Checkers\MenuSystem\obj\Debug\net6.0\MenuSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danyi\RiderProjects\KProgemine\icd0008-2022f\Checkers\MenuSystem\obj\Debug\net6.0\MenuSystem.AssemblyInfoInputs.cache
+C:\Users\danyi\RiderProjects\KProgemine\icd0008-2022f\Checkers\MenuSystem\obj\Debug\net6.0\MenuSystem.AssemblyInfo.cs
+C:\Users\danyi\RiderProjects\KProgemine\icd0008-2022f\Checkers\MenuSystem\obj\Debug\net6.0\MenuSystem.csproj.CoreCompileInputs.cache
+C:\Users\danyi\RiderProjects\KProgemine\icd0008-2022f\Checkers\MenuSystem\obj\Debug\net6.0\MenuSystem.dll
+C:\Users\danyi\RiderProjects\KProgemine\icd0008-2022f\Checkers\MenuSystem\obj\Debug\net6.0\refint\MenuSystem.dll
+C:\Users\danyi\RiderProjects\KProgemine\icd0008-2022f\Checkers\MenuSystem\obj\Debug\net6.0\MenuSystem.pdb
+C:\Users\danyi\RiderProjects\KProgemine\icd0008-2022f\Checkers\MenuSystem\obj\Debug\net6.0\ref\MenuSystem.dll

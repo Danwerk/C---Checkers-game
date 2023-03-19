@@ -1,0 +1,194 @@
+﻿@page
+@using GameBrain
+@using Domain
+@model WebApp.Pages_CheckersGames.Play
+
+
+@if (Model.WonByBlack == null)
+{
+    <h1>Playing as: @GetPlayerName() </h1>
+    <h2>Your status: @GetPlayerMoveStatus()</h2>
+}
+else
+{
+    <h1 style="color: darkred">
+        Game won by: @(Model.WonByBlack == true ? Model.Game.Player2Name + "- (BLACK) " :
+                         Model.Game.Player1Name + "- (WHITE) ")
+    </h1>
+}
+@* <h2>Next move: @(Model.Brain.NextMoveByBlack() ? $"PLAYER 2 - {Model.Game.Player2Name} BLACK" : $"PLAYER 1 - {Model.Game.Player1Name} - WHITE")</h2> *@
+
+
+<table class="table table-bordered game-table">
+    @for (var y = 0; y < Model.Brain.GetBoard()[0].GetLength(0); y++)
+    {
+        <tr>
+            @for (var x = 0; x < Model.Brain.GetBoard().GetLength(0); x++)
+            {
+                <td class="game-table-cell @GetCellBgrClass(Model.Board[x][y], x, y)">
+                    
+                    @if (Model.StartMove &&
+                         Model.Board[x][y] != EGamePiece.WhiteSquare && Model.Brain.PieceHasMoves(x, y))
+                    {
+                        if (Model.Brain.NextMoveByBlack() && (Model.Board[x][y] == EGamePiece.BlackPiece || Model.Board[x][y] == EGamePiece.BlackKing))
+                        {
+                            <div class="clickable-div" onclick="window.location = './Play?id=@Model.Game.Id&fromX=@x&fromY=@y&playerNo=@Model.PlayerNo'">
+                                @GetCellContents(Model.Board[x][y])
+                            </div>
+                            
+                        }
+                        else if (!Model.Brain.NextMoveByBlack() && (Model.Board[x][y] == EGamePiece.WhitePiece || Model.Board[x][y] == EGamePiece.WhiteKing))
+                        {
+                            <div class="clickable-div" onclick="window.location = './Play?id=@Model.Game.Id&fromX=@x&fromY=@y&playerNo=@Model.PlayerNo'">
+                                @GetCellContents(Model.Board[x][y])
+                            </div>
+                            
+                        }
+
+                        else
+                        {
+                            <div
+                                class="clickable-div">
+                                @GetCellContents(Model.Board[x][y])
+                            </div>
+                        }
+
+                    }
+                    else if (!Model.StartMove && Model.FromX != null && Model.FromY != null)
+                    {
+                        if (Model.Brain.PieceMoveIsPossible((int)Model.FromX, (int)Model.FromY, x, y) || x == Model.FromX &&
+                            y == Model.FromY)
+                        {
+                            <div class="clickable-div" onclick="window.location = './Play?id=@Model.Game.Id&toX=@x&toY=@y&fromX=@Model.FromX&fromY=@Model.FromY&playerNo=@Model.PlayerNo'">
+
+                                @GetCellContents(Model.Board[x][y])
+
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="clickable-div @(x == Model.FromX && y == Model.FromY ? "active-checker-div" : "")">@GetCellContents(Model.Board[x][y])</div>
+                        }
+                    }
+                    else
+                    {
+                        <div
+                            class="clickable-div">
+                            @GetCellContents(Model.Board[x][y])
+                        </div>
+                    }
+
+
+                </td>
+            }
+        </tr>
+    }
+</table>
+
+@section Scripts
+{
+    @if (!IsPlayerMove() || IsAiMove())
+    {
+        <script>
+            setTimeout(()=>{
+                window.location = './Play?id=@Model.Game.Id&playerNo=@Model.PlayerNo&checkAi=true';
+            },1000)
+
+
+
+        </script>
+    }
+
+}
+
+
+@functions
+{
+    string GetCellBgrClass(EGamePiece? piece, int x, int y)
+    {
+        if (Model.FromX != null && Model.FromY != null)
+        {
+            if (IsPlayerMove() && Model.Brain.PieceMoveIsPossible((int)Model.FromX, (int)Model.FromY, x, y))
+            {
+                return "game-table-cell-move-possible-black";
+            }
+        }
+        return piece == EGamePiece.WhiteSquare ? "game-table-cell-white" : "game-table-cell-black";
+    }
+
+
+    string GetCellContents(EGamePiece? piece)
+    {
+    // Unicodes for black and white kings
+        string whiteKingCode = "265A"; //whiteKing unicode
+        string blackKingCode = "2654"; //blackKing unicode
+        int code1 = int.Parse(whiteKingCode, System.Globalization.NumberStyles.HexNumber);
+        int code2 = int.Parse(blackKingCode, System.Globalization.NumberStyles.HexNumber);
+        string whiteKing = char.ConvertFromUtf32(code1);
+        string blackKing = char.ConvertFromUtf32(code2);
+        switch (piece)
+        {
+            case EGamePiece.WhiteSquare:
+                return "";
+            case EGamePiece.BlackPiece:
+                return "◎";
+            case EGamePiece.WhitePiece:
+                return "◉";
+            case EGamePiece.WhiteKing:
+                return whiteKing;
+            case EGamePiece.BlackKing:
+                return blackKing;
+        }
+        return "";
+    }
+
+
+    string GetPlayerName()
+    {
+        return Model.PlayerNo == 0 ? Model.Game.Player1Name + " - (WHITE)" : Model.Game.Player2Name + " - (BLACK)";
+    }
+
+    string GetPlayerMoveStatus()
+    {
+        if (Model.GameState.NextMoveByBlack && Model.PlayerNo == 1)
+        {
+            return "Your turn!";
+        }
+        if (!Model.GameState.NextMoveByBlack && Model.PlayerNo == 0)
+        {
+            return "Your turn!";
+        }
+        return "Please wait for opponents move";
+    }
+
+    bool IsPlayerMove()
+    {
+        if (Model.PlayerNo == 0 && !Model.GameState.NextMoveByBlack)
+        {
+            return true;
+        }
+        if (Model.PlayerNo == 1 && Model.GameState.NextMoveByBlack)
+        {
+            return true;
+        }
+        return false;
+    }
+
+    bool IsAiMove()
+    {
+        if (Model.Brain.NextMoveByBlack() && Model.PlayerNo == 1 && Model.Game.Player2Type == EPlayerType.Ai)
+        {
+            return true;
+        }
+
+        if (!Model.Brain.NextMoveByBlack() && Model.PlayerNo == 0 && Model.Game.Player1Type == EPlayerType.Ai)
+        {
+            return true;
+        }
+
+        return false;
+    }
+
+
+
+}

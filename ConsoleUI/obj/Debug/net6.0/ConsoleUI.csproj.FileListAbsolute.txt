@@ -1,0 +1,17 @@
+C:\Users\danyi\RiderProjects\KProgemine\icd0008-2022f\Checkers\ConsoleUI\bin\Debug\net6.0\ConsoleUI.deps.json
+C:\Users\danyi\RiderProjects\KProgemine\icd0008-2022f\Checkers\ConsoleUI\bin\Debug\net6.0\ConsoleUI.dll
+C:\Users\danyi\RiderProjects\KProgemine\icd0008-2022f\Checkers\ConsoleUI\bin\Debug\net6.0\ConsoleUI.pdb
+C:\Users\danyi\RiderProjects\KProgemine\icd0008-2022f\Checkers\ConsoleUI\bin\Debug\net6.0\GameBrain.dll
+C:\Users\danyi\RiderProjects\KProgemine\icd0008-2022f\Checkers\ConsoleUI\bin\Debug\net6.0\GameBrain.pdb
+C:\Users\danyi\RiderProjects\KProgemine\icd0008-2022f\Checkers\ConsoleUI\obj\Debug\net6.0\ConsoleUI.csproj.AssemblyReference.cache
+C:\Users\danyi\RiderProjects\KProgemine\icd0008-2022f\Checkers\ConsoleUI\obj\Debug\net6.0\ConsoleUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danyi\RiderProjects\KProgemine\icd0008-2022f\Checkers\ConsoleUI\obj\Debug\net6.0\ConsoleUI.AssemblyInfoInputs.cache
+C:\Users\danyi\RiderProjects\KProgemine\icd0008-2022f\Checkers\ConsoleUI\obj\Debug\net6.0\ConsoleUI.AssemblyInfo.cs
+C:\Users\danyi\RiderProjects\KProgemine\icd0008-2022f\Checkers\ConsoleUI\obj\Debug\net6.0\ConsoleUI.csproj.CoreCompileInputs.cache
+C:\Users\danyi\RiderProjects\KProgemine\icd0008-2022f\Checkers\ConsoleUI\obj\Debug\net6.0\ConsoleUI.csproj.CopyComplete
+C:\Users\danyi\RiderProjects\KProgemine\icd0008-2022f\Checkers\ConsoleUI\obj\Debug\net6.0\ConsoleUI.dll
+C:\Users\danyi\RiderProjects\KProgemine\icd0008-2022f\Checkers\ConsoleUI\obj\Debug\net6.0\refint\ConsoleUI.dll
+C:\Users\danyi\RiderProjects\KProgemine\icd0008-2022f\Checkers\ConsoleUI\obj\Debug\net6.0\ConsoleUI.pdb
+C:\Users\danyi\RiderProjects\KProgemine\icd0008-2022f\Checkers\ConsoleUI\obj\Debug\net6.0\ref\ConsoleUI.dll
+C:\Users\danyi\RiderProjects\KProgemine\icd0008-2022f\Checkers\ConsoleUI\bin\Debug\net6.0\Domain.dll
+C:\Users\danyi\RiderProjects\KProgemine\icd0008-2022f\Checkers\ConsoleUI\bin\Debug\net6.0\Domain.pdb

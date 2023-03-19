@@ -1,0 +1,92 @@
+/*html {*/
+/*  font-size: 14px;*/
+/*}*/
+
+/*@media (min-width: 768px) {*/
+/*  html {*/
+/*    font-size: 16px;*/
+/*  }*/
+/*}*/
+
+/*html {*/
+/*  position: relative;*/
+/*  min-height: 100%;*/
+/*}*/
+
+/*body {*/
+/*  margin-bottom: 60px;*/
+/*}*/
+
+/*.game-table {*/
+/*  width: initial;*/
+/*}*/
+
+/*.game-table-cell {*/
+/*  width: 75px;*/
+/*  height: 75px;*/
+/*}*/
+
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+
+.game-table {
+  width: initial;
+  background-color: #cfe2ff;
+}
+
+
+.game-table-cell {
+  font-size: 35px ;
+  width: 100px;
+  min-width: 120px;
+  height: 120px;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.game-table-cell-white {
+  background-color: white !important;
+}
+
+.game-table-cell-black {
+  background-color: black !important;
+}
+
+.game-table-cell-move-is-possible {
+  background-color: red !important;
+}
+
+.clickable-div{
+  display: flex;
+  font-size: 65px;
+  
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.active-checker-div{
+  color: darkred;
+  
+  -webkit-text-stroke: 2px blue;
+}

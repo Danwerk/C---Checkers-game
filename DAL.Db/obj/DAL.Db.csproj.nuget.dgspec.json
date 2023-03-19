@@ -1,0 +1,286 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\danyi\\RiderProjects\\KProgemine\\icd0008-2022f\\Checkers\\DAL.Db\\DAL.Db.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\danyi\\RiderProjects\\KProgemine\\icd0008-2022f\\Checkers\\DAL.Db\\DAL.Db.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\danyi\\RiderProjects\\KProgemine\\icd0008-2022f\\Checkers\\DAL.Db\\DAL.Db.csproj",
+        "projectName": "DAL.Db",
+        "projectPath": "C:\\Users\\danyi\\RiderProjects\\KProgemine\\icd0008-2022f\\Checkers\\DAL.Db\\DAL.Db.csproj",
+        "packagesPath": "C:\\Users\\danyi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\danyi\\RiderProjects\\KProgemine\\icd0008-2022f\\Checkers\\DAL.Db\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\danyi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\danyi\\RiderProjects\\KProgemine\\icd0008-2022f\\Checkers\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\danyi\\RiderProjects\\KProgemine\\icd0008-2022f\\Checkers\\DAL\\DAL.csproj"
+              },
+              "C:\\Users\\danyi\\RiderProjects\\KProgemine\\icd0008-2022f\\Checkers\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\danyi\\RiderProjects\\KProgemine\\icd0008-2022f\\Checkers\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0-rc.2.22472.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.0-rc.2.22472.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.0-rc.2.22472.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite.Core": {
+              "target": "Package",
+              "version": "[7.0.0-rc.2.22472.11, )"
+            },
+            "SQLite": {
+              "target": "Package",
+              "version": "[3.13.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\danyi\\RiderProjects\\KProgemine\\icd0008-2022f\\Checkers\\DAL\\DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\danyi\\RiderProjects\\KProgemine\\icd0008-2022f\\Checkers\\DAL\\DAL.csproj",
+        "projectName": "DAL",
+        "projectPath": "C:\\Users\\danyi\\RiderProjects\\KProgemine\\icd0008-2022f\\Checkers\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\danyi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\danyi\\RiderProjects\\KProgemine\\icd0008-2022f\\Checkers\\DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\danyi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\danyi\\RiderProjects\\KProgemine\\icd0008-2022f\\Checkers\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\danyi\\RiderProjects\\KProgemine\\icd0008-2022f\\Checkers\\Domain\\Domain.csproj"
+              },
+              "C:\\Users\\danyi\\RiderProjects\\KProgemine\\icd0008-2022f\\Checkers\\GameBrain\\GameBrain.csproj": {
+                "projectPath": "C:\\Users\\danyi\\RiderProjects\\KProgemine\\icd0008-2022f\\Checkers\\GameBrain\\GameBrain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\danyi\\RiderProjects\\KProgemine\\icd0008-2022f\\Checkers\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\danyi\\RiderProjects\\KProgemine\\icd0008-2022f\\Checkers\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\danyi\\RiderProjects\\KProgemine\\icd0008-2022f\\Checkers\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\danyi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\danyi\\RiderProjects\\KProgemine\\icd0008-2022f\\Checkers\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\danyi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0-rc.2.22472.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.0-rc.2.22472.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.0-rc.2.22472.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite.Core": {
+              "target": "Package",
+              "version": "[7.0.0-rc.2.22472.11, )"
+            },
+            "SQLite": {
+              "target": "Package",
+              "version": "[3.13.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\danyi\\RiderProjects\\KProgemine\\icd0008-2022f\\Checkers\\GameBrain\\GameBrain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\danyi\\RiderProjects\\KProgemine\\icd0008-2022f\\Checkers\\GameBrain\\GameBrain.csproj",
+        "projectName": "GameBrain",
+        "projectPath": "C:\\Users\\danyi\\RiderProjects\\KProgemine\\icd0008-2022f\\Checkers\\GameBrain\\GameBrain.csproj",
+        "packagesPath": "C:\\Users\\danyi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\danyi\\RiderProjects\\KProgemine\\icd0008-2022f\\Checkers\\GameBrain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\danyi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\danyi\\RiderProjects\\KProgemine\\icd0008-2022f\\Checkers\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\danyi\\RiderProjects\\KProgemine\\icd0008-2022f\\Checkers\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
